@@ -28,11 +28,11 @@ namespace Api
         {
             services.AddControllers();
 
-            // JWT = Jason Web Token
+            // JWT = Json Web Token
             services.AddAuthentication("Bearer")
                 .AddJwtBearer("Bearer", options =>
                 {
-                    options.Authority = "https://localhost:5000";
+                    options.Authority = "https://localhost:5001";
                     options.TokenValidationParameters
                     = new TokenValidationParameters
                     {

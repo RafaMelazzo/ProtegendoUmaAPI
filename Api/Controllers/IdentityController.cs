@@ -1,12 +1,13 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Api.Controllers
 {
     [Route("identity")]
     [Authorize]
-    public class IdatityContoller : ControllerBase
+    public class IdentityController : ControllerBase
     {
         [HttpGet]
         public IActionResult Get()
